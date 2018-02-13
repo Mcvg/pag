@@ -1,3 +1,7 @@
+body{
+  background: #ECFEFF !important;
+}
+
 a {
   margin: 0px;
   padding: 0px; }
@@ -13,7 +17,7 @@ p {
 .tSlow, a, input,
 select,
 option,
-textarea, button, .rombo, .servicio-img, .diamante, nav, nav .logo img, nav ul, nav ul .link-active a:after, nav ul li a, nav ul li a:before, nav ul li a:after, .grid-item, .grid-item:before, .tumblr, .copy a, .social-networks li, .social-networks li i {
+textarea, button, .rombo, #button,  .servicio-img, .diamante, nav, nav .logo img, nav ul, nav ul .link-active a:after, nav ul li a, nav ul li a:before, nav ul li a:after, .grid-item, .grid-item:before, .tumblr, .copy a, .social-networks li, .social-networks li i {
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
@@ -21,7 +25,9 @@ textarea, button, .rombo, .servicio-img, .diamante, nav, nav .logo img, nav ul, 
 .pad_100 {
   padding: 100px 0px; }
 
-.center {
+.pad_200{
+  padding: 200px 0px;}
+  .center {
   text-align: center;
   margin: 0px auto; }
 
@@ -55,7 +61,7 @@ textarea {
   min-height: 150px;
   max-height: 250px; }
 
-button {
+button , #button{
   background-color: transparent;
   text-transform: uppercase;
   border: 1px solid #060a0f;
@@ -66,10 +72,11 @@ button {
   letter-spacing: 1px;
   cursor: pointer;
   opacity: .7; }
-  button:hover {
+  button:hover, #button:hover {
     opacity: 1;
     background-color: #060a0f;
-    color: white; }
+    color: white; 
+  text-decoration: none}
 
 .black {
   background-color: #060a0f;
@@ -97,12 +104,27 @@ button {
   width: 100%;
   overflow: hidden;
   margin: 0px auto;
-  background-image: url("../images/square_01.jpg");
+
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 50; }
 
+  .index .diamante{
+    background-image: url("../images/square_01.jpg");
+  }
+  .consagra .diamante{
+    background-image: url("../images/square_02.jpg");
+    left: 40%;
+  }
+  .maria .diamante{
+    background-image: url("../images/maria.jpg");
+    left: 40%;
+  }
+  .jesus .diamante{
+    background-image: url("../images/jesus.jpg");
+    left: 40%;
+  }
 nav {
   width: 100%;
   background-color: transparent;
@@ -367,3 +389,28 @@ footer {
         -ms-transform: rotate(-45deg) translate(-3px, 3px);
         -o-transform: rotate(-45deg) translate(-3px, 3px);
         transform: rotate(-45deg) translate(-3px, 3px); }
+
+.maria .list-group-item{
+  color: #000;
+  background-color: #f1efc9;
+  border-color: #fff;
+}
+.jesus .list-group-item{
+  color: #000;
+  background-color: #BDE4F4;
+  border-color: #BDE4F4;
+}
+
+.list-group-item:hover{
+  color: rgb(148, 140, 140);
+}
+.maria .list-group-item.active {
+  color: #000;
+  background-color: #fffdd3;
+  border-color: #F0CA6D;
+}
+.jesus .list-group-item.active {
+  color: #000;
+  background-color: rgb(148, 219, 247);
+  border-color: #050733;
+}
